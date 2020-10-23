@@ -11,12 +11,15 @@
 	</head>
 
 	<body>
-		<div id="root"></div>
+		<div id="react-container"></div>
 
 		<script type="text/babel">
 			const MyComponent = () => <div>Hello World</div>
 
-			ReactDOM.render(<MyComponent />, document.getElementById('root'))
+			ReactDOM.render(
+				<MyComponent />,
+				document.getElementById('react-container')
+			)
 		</script>
 	</body>
 </html>
