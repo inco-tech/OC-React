@@ -11,12 +11,22 @@
 	</head>
 
 	<body>
-		<div id="root"></div>
+		<div id="react-container"></div>
 
 		<script type="text/babel">
-			const MyComponent = () => <div>Hello World</div>
+			const name = 'alexia'
+			const philodendron = 5
+			const flower = 8
+			const MyTitle = () => <h1>{name.toUpperCase()}</h1>
+			const MyMath = () => <div>{philodendron + flower}</div>
 
-			ReactDOM.render(<MyComponent />, document.getElementById('root'))
+			ReactDOM.render(
+				<React.Fragment>
+					<MyTitle />
+					<MyMath />
+				</React.Fragment>,
+				document.getElementById('react-container')
+			)
 		</script>
 	</body>
 </html>
